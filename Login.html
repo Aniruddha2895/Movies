@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Login Form</title>
+	<script>
+		function myFunction()
+		{
+			var un = document.forms["myForm"]["Uname"].value;
+			var pw = document.forms["myForm"]["Pass"].value;
+			if(un=="student" && pw=="1234")
+			{
+				window.location.href="E:\\Movie\\Movie\\index.html";
+			}
+			else
+			{
+				alert("Invalid Username and Password");
+			}
+		}
+	</script>
+	<style>
+		body
+		{
+			background: #ffc00;
+		}
+		.div2
+		{
+			width: 600px;
+			margin: auto;
+			margin: 40 0 0 100px;
+			overflow:hidden;
+			padding: 70px;
+			background: #008000;
+		}
+		h2
+		{
+			text-align: center;
+			padding: 10px;
+			color: #003300;
+		}
+		label
+		{
+			color: white;
+			padding-left: 10px;
+		}
+		.inputText
+		{
+			width: 300px;
+			height: 30px;
+			border: none;
+			border-radius: 2px;
+			padding-left: 8px;
+		}
+
+		#logButton
+		{
+			width: 300px;
+			height: 30px;
+			border: none;
+			border-radius: 10px;
+			padding-left: 7px;
+			color: black;
+			font-size: 16px;
+		}
+</style>
+</head>
+<body>
+	<h1><center>C I N E P H I L E</h1>
+	<div class="div2">
+		<form name="myForm" method="post">
+			<label>User Name</label>
+			<input type="text" name="Uname" class="inputText" placeholder="User Name">
+			<br><br>
+			<label>Password</label>
+			<input type="password" name="Pass" class="inputText" placeholder="Password">
+			<br><br>
+			<input type="button" name="log" id="logButton" value="Login" onclick="myFunction()">
+			<br><br>
+		</form>
+
+	</div>
+</body>
+</html>
